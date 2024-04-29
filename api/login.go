@@ -17,6 +17,14 @@ type loginReqStruct struct {
 	VerifyCode string `json:"verify_code,omitempty"`
 	Cookies    string `json:"cookies,omitempty"`
 	Context    any    `json:"context,omitempty"`
+
+	type loginReqStruct struct {
+	Account    string `json:"account"`
+	Password   string `json:"password,omitempty"`
+	Type       string `json:"type"`
+	VerifyCode string `json:"verify_code,omitempty"`
+	Cookies    string `json:"cookies,omitempty"`
+	Context    any    `json:"context,omitempty"
 }
 
 type loginRespStruct struct {
